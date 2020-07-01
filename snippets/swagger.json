@@ -1,0 +1,32 @@
+{
+	"swagger meta": {
+		"prefix": "swagger:meta",
+		"body": "// Package ${1:service} API.\n//\n// ${2:description}\n//\n//      Schemes: ${3:schemes}\n//      Host: ${4:host}\n//      Version: 0.0.1\n//      BasePath: ${5:basepath}\n//\n// swagger:meta",
+		"description": "Swagger for commond swagger:meta"
+	},
+	"swagger route": {
+		"prefix": "swagger:route",
+		"body": "// swagger:route ${1:method} ${2:uri} pets users listPets\n//\n// Lists pets filtered by some parameters.\n//\n// This will show all available pets by default.\n// You can get the pets that are out of stock\n//\n//     Consumes:\n//     - application/json\n//     - application/x-protobuf\n//\n//     Produces:\n//     - application/json\n//     - application/x-protobuf\n//\n//     Schemes: http, https, ws, wss\n//\n//     Deprecated: true\n//\n//     Security:\n//       api_key:\n//       oauth: read, write\n//\n//     Responses:\n//       default: genericError\n//       200: someResponse\n//       422: validationError",
+		"description": "Swagger for commond swagger:route"
+	},
+	"swagger params": {
+		"prefix": "swagger:params",
+		"body": "// swagger:parameters ${1:params}",
+		"description": "Swagger for commond swagger:param"
+	},
+	"swagger operation": {
+		"prefix": "swagger:operation",
+		"body": "// swagger:operation ${1:method} ${2:uri} 接口组 ${3:params}\n//\n// 接口名称\n//\n// 备注\n//\n// ---\n// produces:\n// - application/json\n// consumes:\n// - application/json\n// responses:\n//   \"200\":\n//     \"$ref\": \"${3:response}\"",
+		"description": "Swagger for commond swagger:operation"
+	},
+	"swagger response": {
+		"prefix": "swagger:response",
+		"body": "// swagger:response ${1:response}",
+		"description": "Swagger for commond swagger:operation"
+	},
+	"swagger model": {
+		"prefix": "swagger:model",
+		"body": "// User represents the user for this application\n//\n// A user is the security principal for this application.\n// It's also used as one of main axes for reporting.\n//\n// A user can have friends with whom they can share what they like.\n//\n// swagger:model",
+		"description": "Swagger for commond swagger:model"
+	}
+}
