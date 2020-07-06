@@ -16,7 +16,7 @@
 	},
 	"swagger operation": {
 		"prefix": "swagger:operation",
-		"body": "// swagger:operation ${1:method} ${2:uri} 接口组 ${3:params}\n//\n// 接口名称\n//\n// 备注\n//\n// ---\n// produces:\n// - application/json\n// consumes:\n// - application/json\n// responses:\n//   \"200\":\n//     \"$ref\": \"${3:response}\"",
+		"body": "// swagger:operation ${1:method} ${2:uri} 接口组 ${3:params}\n//\n// 接口名称\n//\n// 备注\n//\n// ---\n// produces:\n// - application/json\n// consumes:\n// - application/json\n// responses:\n//   \"200\":\n//     \"$ref\": \"#/responses/${4:response}\"",
 		"description": "Swagger for commond swagger:operation"
 	},
 	"swagger response": {

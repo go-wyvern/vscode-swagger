@@ -2,7 +2,11 @@
 	"name": "swagger",
 	"displayName": "swagger",
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.0.2",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/go-wyvern/vscode-swagger"
+    },
 	"engines": {
 		"vscode": "^1.46.0"
 	},
